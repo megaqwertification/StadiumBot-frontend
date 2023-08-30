@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Mismatch Assignment Optimizer</title>
+    <meta charset="UTF-8" />
+  </head>
+<!-- forked from sockdude1's old website. TODO: give proper credit-->
+  <body>
+    <div id="app">
+      <div id="columns">
+        <table id="grid">
+          <thead>
+            <tr></tr>
+          </thead>
+          <tbody></tbody>
+        </table>
+        <div id="right-column">
+          <div id="options">
+            <div>
+              <label
+                ><input id="full-mismatch" type="checkbox" />Full
+                mismatch</label
+              >
+            </div>
+            <label
+              ><input id="worst-pairings" type="checkbox" />Worst total</label
+            >
+          </div>
+          <div id="results">
+            <div id="result-assignment"></div>
+            <div id="result-total"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script type="module" src="mismatch_src/index.js"></script>
+  </body>
+</html>
